@@ -7,26 +7,26 @@
 
 3. Создал файл `script.bash`, используя команду `gedit script.bash`
 
-6. В файле написал следующие две строки:
+4. В файле написал следующие две строки:
 ```bash
 #!/bin/bash
 
 echo "Welcome, Vasya Pupkin"
 ```
 
-8. Теперь при вводе команды `bash script.bash` в терминале получаю вывод:
+5. Теперь при вводе команды `bash script.bash` в терминале получаю вывод:
 ```bash
 Welcome, Vasya Pupkin
 ```
 
-9. Для того, чтобы при вводе команды `script.bash` в выводе я получал желаемое имя, я модифицировал файл следующим образом:
+6. Для того, чтобы при вводе команды `script.bash` в выводе я получал желаемое имя, я модифицировал файл следующим образом:
 ```bash
 #!/bin/bash
 
 echo "Welcome, %*"
 ```
 
-10. Теперь при вводе имени "Alexander Alexandrovich Untila" после `bash script.bash` получаю в выводе:
+7. Теперь при вводе имени "Alexander Alexandrovich Untila" после `bash script.bash` получаю в выводе:
 ```bash
 Welcome, Alexander Alexandrovich Untila
 ```
