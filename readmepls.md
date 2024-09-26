@@ -8,15 +8,26 @@
 3. Создал файл `script.bash`, используя команду `gedit script.bash`
 
 6. В файле написал следующие две строки:
-`#!/bin/bash
-echo "Welcome, Vasya Pupkin"`
+```bash
+#!/bin/bash
 
-7. Теперь при вводе команды `bash script.bash` в терминале получаю вывод:
-`Welcome, Vasya Pupkin`
+echo "Welcome, Vasya Pupkin"
+```
 
-8. Для того, чтобы при вводе команды `script.bash` в выводе я получал желаемое имя, я модифицировал файл следующим образом:
-`#!/bin/bash
-echo "Welcome, %*"`
+8. Теперь при вводе команды `bash script.bash` в терминале получаю вывод:
+```bash
+Welcome, Vasya Pupkin
+```
 
-9. Теперь при вводе имени "Alexander Alexandrovich Untila" после `bash script.bash` получаю в выводе:
-`Welcome, Alexander Alexandrovich Untila`
+9. Для того, чтобы при вводе команды `script.bash` в выводе я получал желаемое имя, я модифицировал файл следующим образом:
+```bash
+#!/bin/bash
+
+echo "Welcome, %*"
+```
+
+10. Теперь при вводе имени "Alexander Alexandrovich Untila" после `bash script.bash` получаю в выводе:
+```bash
+Welcome, Alexander Alexandrovich Untila
+```
+
